@@ -1,5 +1,7 @@
-# scfetch 
-![[screen.png]]
+# scfetch
+
+![screen](https://github.com/farnsworth3010/scfetch/blob/main/screen.png)
+
 scfetch is a command-line system information tool written in C++ for GNU/Linux.
 
 # 💥 Features
