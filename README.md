@@ -12,6 +12,7 @@ scfetch is a command-line system information tool written in C++ for GNU/Linux.
 
 ```
 $ git clone https://github.com/farnsworth3010/scfetch.git
+$ cd scfetch
 $ mkdir -p build
 $ cd build
 $ cmake ..
