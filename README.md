@@ -2,7 +2,6 @@
 <h3 align="center">
 system information tool written in C++ for GNU/Linux.
 </h3>
-
 ![screen](https://github.com/farnsworth3010/scfetch/blob/main/screen.png)
 # 💥 Features
 
