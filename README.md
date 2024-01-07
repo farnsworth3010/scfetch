@@ -16,7 +16,7 @@ $ cd scfetch
 $ mkdir -p build
 $ cd build
 $ cmake ..
-$ make install
+$ sudo make install
 ```
 
 # 🏃 Using
