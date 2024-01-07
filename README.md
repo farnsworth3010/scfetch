@@ -20,6 +20,30 @@ $ sudo make install
 ```
 
 # 🏃 Using
+
 ```
 $ scfetch
+```
+
+## Choosing distro ASCII
+![screenlist](https://github.com/farnsworth3010/scfetch/blob/main/screenlist.png)
+
+List of available distros 
+```
+$ scfetch list
+```
+
+Select distro
+```
+$ scfetch [distro]
+
+ex:
+$ scfetch "Manjaro Linux"
+$ scfetch "Ubuntu"
+```
+
+# Getting help
+
+```
+$ scfetch help
 ```

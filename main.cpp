@@ -2,10 +2,11 @@
 #include <fstream>
 #include <unistd.h> // to readlink ()
 #include <libgen.h> // to basename()
-
+#include <vector>
 // to get terminal width
 #include <sys/ioctl.h>
 #include <stdio.h>
+#include <cstring>
 
 using namespace std;
 #define RED "\033[31m"                /* Red */
@@ -311,10 +312,28 @@ int get_logo_width(ifstream &logo)
 
 int main(int argc, char **argv)
 {
+
     string distro = get_distro();
     if (argc > 1)
     {
-        distro = argv[1];
+        if (strcmp(argv[1], "list") == 0) {
+            vector<string> distros{"\"Arch Linux\"", "Ubuntu", "\"Manjaro Linux\""};
+            cout << "Available distros: " << endl;
+            for (auto i = distros.begin(); i != distros.end(); ++i) {
+                cout << *i << endl;
+            }
+            return 0;
+        }
+        else if (strcmp(argv[1], "help") == 0) {
+            cout << "Available commands: " << endl;
+            cout << "scfetch [distroname] - selects a distro art" << endl;
+            cout << "scfetch list         - shows a list of available distros" << endl;
+            return 0;
+        }
+        else {
+            distro = argv[1];
+
+        }
     }
     // struct winsize w;
     // ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
